@@ -1,0 +1,27 @@
+-- Online SQL Editor to Run SQL Online.
+-- Use the editor to create new tables, insert data and all other SQL operations.
+  
+select 
+	*
+from Employees
+where employee_id between 100 and 103;
+
+select *
+from Employees
+where employee_id > 100 and employee_id < 103;
+
+select *
+from Employees
+where last_name like 'k%';
+
+select *
+from Employees
+where last_name like '%n';
+
+select *
+from Employees
+where job_id = 'ST_MAN';
+
+select *
+from Employees
+where manager_id in (100, 103);
